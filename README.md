@@ -93,3 +93,7 @@ docker push mohithsk05/ram1:v1
 19
 docker build -t java-app .
 docker run -d -t java-app
+
+16
+docker build -f dockerfile -t my-first-app .
+docker run -p 5020:5020 my-first-app .
