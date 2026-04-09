@@ -95,5 +95,12 @@ docker build -t java-app .
 docker run -d -t java-app
 
 16
+app.py,Dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY app.py .
+EXPOSE 5020
+CMD ["python", "app.py"]
+
 docker build -f dockerfile -t my-first-app .
 docker run -p 5020:5020 my-first-app .
