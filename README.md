@@ -101,8 +101,32 @@ docker push mohithsk05/ram1:v1
 
 
 19
-docker build -t java-app .
-docker run -d -t java-app
+git-docker integration
+In Jenkins 
+open pipeline and add scripts
+pipeline {
+    agent any
+    stages {
+        stage('Clone Code') {
+            steps {
+                git branch: 'main', url: '<your-repo>'
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                bat 'docker build -t my-app .'
+            }
+        }
+        stage('Run Container') {
+            steps {
+                bat 'docker run -d my-app'
+            }
+        }
+    }
+}
+
+add git url to code
+build,show pipeline
 
 16
 app.py,Dockerfile
