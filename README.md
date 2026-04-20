@@ -51,8 +51,9 @@ in pom below build
       </plugin>
     </plugins>
 mvn clean test
+goto target-site-index
 
-15.
+16.
 docker --version
 docker ps
 docker ps -a
