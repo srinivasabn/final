@@ -67,7 +67,7 @@ docker rm 'id'
 17.
 docker run -d nginx
 docker run -d -p 8088:80 nginx
-volume create vol
+docker volume create vol
 docker run -it -v vol:/data ubuntu bash
 cd /data
 echo "hello world" > f1.txt
