@@ -128,3 +128,12 @@ server.serve_forever()
 
 docker build -f Dockerfile -t my-first-app .
 docker run -p 5020:5020 my-first-app
+
+20
+docker background,git codes
+pipeline project
+script from scm
+none-git
+paste url,credentials
+save,build
+console op-local host - web page
