@@ -112,5 +112,5 @@ COPY app.py .
 EXPOSE 5020
 CMD ["python", "app.py"]
 
-docker build -f dockerfile -t my-first-app .
-docker run -p 5020:5020 my-first-app .
+docker build -f Dockerfile -t my-first-app .
+docker run -p 5020:5020 my-first-app
