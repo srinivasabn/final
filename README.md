@@ -53,7 +53,7 @@ in pom below build
 mvn clean test
 goto target-site-index
 
-16.
+15.
 docker --version
 docker ps
 docker ps -a
