@@ -1,5 +1,14 @@
 11.
-
+app.java
+public int add(int a,int b)
+return a+b;
+main-build path-add lib-junit
+src-apptest.java
+app var=new app();
+int a=4;
+int b=var.add(2,2);
+assertEquals(a,b);
+run as junit
 
 12.
 mvn archetype:generate
