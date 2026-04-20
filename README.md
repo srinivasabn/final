@@ -21,10 +21,18 @@ make changes and again mvn clean test
 mvn archetype:generate
 code .
 modify codes
-open jenkins-freestyle
-build-
-cd C:\Users\Mohith\OneDrive\Desktop\raghuboss\sample
-mvn test
+#
+do the mvn archetype:generate 
+
+same as EXP-12
+
+Once the mvn clean test is done copy the sample-app path 
+open Jenkins and open free style project 
+Add the execute batch steps command on build step
+
+cd <path>
+mvn test 
+save and build
 
 14.
 same steps as 12 till mvn package
